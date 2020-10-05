@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>My To-Do List</h1>
-        <p>Double-click an item to mark it complete.</p>
-        <input type="text" name="input" id="input">
-        <button class="blueButton">Add</button>
-        <br>
-        <div id="list"></div>
-        <div class="buttonContainer">
-            <button class="blueButton">Clear Completed</button>
-            <button class="greenButton">Empty List</button>
-            <button class="redButton">Save List</button>
-        </div>
+    <div id="myDiv" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
     </div>
+    <ul id="myUL">
+        <li>Hit the gym</li>
+        <li class="checked">Pay bills</li>
+        <li>Meet George</li>
+        <li>Buy eggs</li>
+        <li>Read a book</li>
+        <li>Organize office</li>
+    </ul>
     <script src="main.js"></script>
 </body>
 </html>
